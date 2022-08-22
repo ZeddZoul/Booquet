@@ -1,0 +1,74 @@
+
+main{
+  display: flex;
+  justify-content: space-between;
+  gap: auto;
+  height: 90vh;
+}
+.banner{
+  width: max-content;
+  object-fit: fill;
+}
+.banner img{
+  height: 350px;
+  margin-top: -10%;
+}
+.text{
+  width: 40vw;
+  font-size: 1.3rem;
+}
+.text h3{
+color: #0f5fa4d1;
+text-shadow: 1px 2px 20px rgb(212, 210, 210);
+font-size: 20px;
+}
+.text h1{
+  color: var(--green);
+
+}
+.text p{
+  font-family: var(--serif-font);
+  font-size: 24px;
+color: rgb(39, 38, 38);
+font-weight: 400;
+opacity: .8;
+}
+.text form{
+  width: max-content;
+  height: max-content;
+  box-shadow: 1px 1px 10px #e0e2dd;
+  margin: 15px 0px;
+  border-radius: 15px;
+  display: flex;
+  gap: 10px;
+  background-color: white;
+}
+.text form input, .text form button{
+  border: none;
+  background-color: white;
+  padding: 5px;
+  padding: 15px;
+  outline: none;
+  font-size: 16px;
+  font-family: var(--light-font);
+}
+.text form input{
+width: 130%;
+}
+.text form button{
+ height: 100%;
+ background-color: #0D3354;
+ color: white;
+ border-bottom-right-radius:5px ;
+ border-top-right-radius:5px ;
+}
+
+@media (max-width: 860px){
+  .banner{
+    display: none;
+  }
+  .text{
+    margin: 10% auto;
+    width: 70vw;
+  }
+}

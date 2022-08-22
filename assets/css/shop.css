@@ -1,0 +1,219 @@
+main {
+  padding: 15px 25px;
+}
+main nav {
+  width: 20%;
+  background-color: white;
+  margin: 10px auto 30px;
+  gap: 10px;
+  text-align: center;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  box-shadow: 1px 0px 10px #d2dee9d1;
+  font-family: var(--light-font);
+}
+main nav li{
+  cursor: pointer;
+  padding: 3%;
+  background-color: #d2dee9d1;
+  border-radius: 3px;
+  width: 30%;
+}
+main nav div {
+  width: 2px;
+  height: 25px;
+  background-color: black;
+}
+main nav .selected {
+  background-color: #0f5fa4d1;
+  color: white;
+}
+main #buySection {
+  display: flex;
+  gap: 2%;
+}
+
+main #buySection .sidebar {
+  width: 20%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 3px;
+  height: 50%;
+  box-shadow: 0px 1px 10px #d2dee9d1;
+  position: sticky;
+  top: 20%;
+}
+
+main #buySection .sidebar ul li {
+  margin: 20px;
+  padding: 10px;
+  background-color: #f2f6fad1;
+}
+main #buySection .sidebar ul li a {
+  color: #0a6abed1;
+  font-family: var(--light-font);
+}
+
+main #buySection .sidebar ul li select {
+  border: none;
+  background: none;
+  color: #0a6abed1;
+  outline: none;
+  width: 100%;
+}
+main #buySection .divider {
+  height: 80vh;
+  width: 3px;
+  position: sticky;
+  top: 20%;
+  background-color: #d2dee9d1;
+}
+main #buySectionMain {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+main #buySectionMain h2 {
+  color: var(--green);
+  background-color: white;
+  width: 30%;
+  text-align: center;
+  border-radius: 3px;
+  font-family: var(--light-font);
+  font-weight: 100;
+}
+main #buySectionMain .div {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  margin: 20px 0px;
+}
+main #buySectionMain .div img{
+width: 88%;
+border-radius: 3px;
+}
+main #buySectionMain .div > div {
+  width: 23%;
+  font-family: var(--light-font);
+  box-shadow: 0px 1px 10px #d1dfecd1;
+  text-align: center;
+  padding: 10px;
+  background-color: wheat;
+  border-radius: 5px;
+  min-width: 180px;
+  cursor: pointer;
+}
+main #buySectionMain .div > div:hover{
+  box-shadow: 1px 1px 15px #a6acb1d1;
+}
+main #buySectionMain>p {
+  text-align: center;
+  margin: 10px auto;
+}
+main #buySectionMain p a {
+  color: var(--green);
+}
+#sellSection{
+  display: none;
+  height: 100vh;
+}
+
+main #sellSection form{
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  margin:  auto;
+  position: sticky;
+  top: 15%;
+  background-color: wheat;
+  padding: 20px 40px;
+  border-radius: 3px;
+  box-shadow: 0px 1px 10px #d1dfecd1;
+  text-align: center;
+}
+main #sellSection form h2{
+  color: rgb(88, 85, 85);
+}
+
+main #sellSection form input, main #sellSection textarea{
+display: block;
+width: 100%;
+margin: 10px;
+border: none;
+padding: 5px;
+border-radius: 3px;
+outline: none;
+}
+main #sellSection form input{
+  height: 35px;
+}
+main #sellSection form input::placeholder,  main #sellSection textarea::placeholder{
+font-size: 14px;
+}
+
+main #sellSection form input[type="file"] {
+
+display: none;
+}
+main #sellSection form label{
+  border: 2px solid rgb(204, 211, 226); ;
+  box-shadow: 1px 2px 20px rgb(248, 234, 208);
+  color: white;
+  padding: 10px;
+  margin: 10px auto;
+  width: 80%;
+  font-family: var(--light-font);
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+main #sellSection form label:hover{
+  border-color: #0D3354 ;
+}
+main #sellSection form input[type="submit"]:hover{
+  background-color:#0D3354 ;
+}
+main #sellSection form input[type="submit"]{
+  background-color:#3A7CB4;
+  cursor: pointer;
+  color: white;
+}
+
+
+@media(max-width:985px){
+  .sidebar, .divider{
+    display: none;
+  }
+  main #buySectionMain .div img{
+    width: 100%;
+    min-width: 150px ;
+    }
+}
+@media(max-width:915px){
+  main nav {
+    width: 50%;
+    
+  }
+  .sidebar, .divider{
+    display: none;
+  }
+  main #buySectionMain .div img{
+    width: 100%;
+    min-width: 150px ;
+    }
+}
+@media(max-width:450px){
+  main #buySectionMain .div div {
+    width: 65%;
+  }
+  main nav {
+    width: 70%;
+    
+  }
+}
